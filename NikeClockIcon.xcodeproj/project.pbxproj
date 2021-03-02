@@ -8,16 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		90A16D2425EC249B00A71EAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A16D2325EC249B00A71EAB /* AppDelegate.swift */; };
-		90A16D2625EC249B00A71EAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A16D2525EC249B00A71EAB /* ContentView.swift */; };
+		90A16D2625EC249B00A71EAB /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A16D2525EC249B00A71EAB /* ClockView.swift */; };
 		90A16D2825EC249D00A71EAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90A16D2725EC249D00A71EAB /* Assets.xcassets */; };
 		90A16D2B25EC249D00A71EAB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90A16D2A25EC249D00A71EAB /* Preview Assets.xcassets */; };
 		90A16D2E25EC249D00A71EAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A16D2C25EC249D00A71EAB /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50F1E68025EEE0610091BA55 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		90A16D2025EC249B00A71EAB /* NikeClockIcon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NikeClockIcon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A16D2325EC249B00A71EAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		90A16D2525EC249B00A71EAB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		90A16D2525EC249B00A71EAB /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		90A16D2725EC249D00A71EAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90A16D2A25EC249D00A71EAB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		90A16D2D25EC249D00A71EAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -39,6 +40,7 @@
 		90A16D1725EC249B00A71EAB = {
 			isa = PBXGroup;
 			children = (
+				50F1E68025EEE0610091BA55 /* README.md */,
 				90A16D2225EC249B00A71EAB /* NikeClockIcon */,
 				90A16D2125EC249B00A71EAB /* Products */,
 			);
@@ -56,7 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				90A16D2325EC249B00A71EAB /* AppDelegate.swift */,
-				90A16D2525EC249B00A71EAB /* ContentView.swift */,
+				90A16D2525EC249B00A71EAB /* ClockView.swift */,
 				90A16D2725EC249D00A71EAB /* Assets.xcassets */,
 				90A16D2C25EC249D00A71EAB /* Main.storyboard */,
 				90A16D2F25EC249D00A71EAB /* Info.plist */,
@@ -144,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90A16D2625EC249B00A71EAB /* ContentView.swift in Sources */,
+				90A16D2625EC249B00A71EAB /* ClockView.swift in Sources */,
 				90A16D2425EC249B00A71EAB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +286,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = NikeClockIcon/NikeClockIcon.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"NikeClockIcon/Preview Content\"";
@@ -308,6 +311,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = NikeClockIcon/NikeClockIcon.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"NikeClockIcon/Preview Content\"";

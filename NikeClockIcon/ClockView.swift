@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ClockView.swift
 //  NikeClockIcon
 //
 //  Created by Michal on 28/02/2021.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ClockView: View {
     @State var currentTime: (hour: String, minute: String) = ("", "")
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -27,10 +27,10 @@ struct ContentView: View {
                     .padding(.top, -hSpacing)
             }
             .font(clockFont)
-            .frame(idealWidth: 100, maxWidth: .infinity, idealHeight: 100, maxHeight: .infinity)
+            .frame(idealWidth: parent.size.width, maxWidth: .infinity, idealHeight: parent.size.height, maxHeight: .infinity)
             .foregroundColor(clockColor)
             .background(backgroundColor)
-            .cornerRadius(20)
+            .cornerRadius(parent.size.height * 0.2)
             .shadow(radius: 3)
         }
         .onReceive(timer) { currentDate in
@@ -44,9 +44,8 @@ struct ContentView: View {
     }
 }
 
-
-struct ContentView_Previews: PreviewProvider {
+struct ClockView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ClockView()
     }
 }

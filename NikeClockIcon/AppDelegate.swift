@@ -14,7 +14,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
+        let clockView = ClockView()
 
         // Create the window and set the content view.
         window = NSWindow(
@@ -24,10 +24,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.isReleasedWhenClosed = false
         window.center()
         window.setFrameAutosaveName("Main Window")
-        window.contentView = NSHostingView(rootView: contentView)
+        window.contentView = NSHostingView(rootView: clockView)
         window.makeKeyAndOrderFront(nil)
         
-        NSApp.dockTile.contentView = NSHostingView(rootView: contentView)
+        NSApp.dockTile.contentView = NSHostingView(rootView: clockView)
 
         let timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
             NSApp.dockTile.display()
