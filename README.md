@@ -31,4 +31,4 @@
 
 ### License
 
-Tatooine is released under the MIT license.
+Nike Clock Dock Icon is released under the MIT license.
